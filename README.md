@@ -4,6 +4,6 @@ SAVE YOUR LIFE :-)
 
 91sdk:
 
-1. AppController.mm中添加 [[SDKNdcom shareApplication] init:appid appKey:appKey delegate:self isDebug:true]
-2. SDKNdCom.init()游戏开始前调用
-3. [[SDKNdcom shareApplication] pause]游戏挂起时，在enterforeground中调用
+1. add [[SDKNdcom shareApplication] init:appid appKey:appKey delegate:self isDebug:true] in AppController.mm 
+2. call SDKNdCom.init() before gamelogic
+3. call [[SDKNdcom shareApplication] pause] in enterforeground
